@@ -7,8 +7,8 @@
 .yarn/install-state.gz
 
 # package
-package-lock.json
-yarn-lock.json
+# package-lock.json
+# yarn-lock.json
 
 # testing
 /coverage
