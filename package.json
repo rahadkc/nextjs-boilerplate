@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "lint:biomi": "npx biome lint .",
+    "lint:biome": "npx biome lint .",
     "lint:ci": "npx biome ci --formatter-enabled=true  --linter-enabled=true --organize-imports-enabled=true .",
     "format": "npx @biomejs/biome check --apply .",
     "format:src": "npx @biomejs/biome format ./src --write",
