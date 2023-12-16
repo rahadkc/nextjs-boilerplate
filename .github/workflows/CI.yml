@@ -48,7 +48,7 @@ jobs:
               run: npx commitlint --from ${{ github.event.pull_request.base.sha}} --to ${{ github.event.pull_request.head.sha }} --verbose
 
             - name: Linter
-              run: npm run lint:ci
+              run: npm run lint:biome
 
             - name: Type checking
               run: npm run check-types
