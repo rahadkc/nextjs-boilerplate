@@ -62,7 +62,7 @@ jobs:
             - uses: actions/upload-artifact@v3
               if: always()
               with:
-                name: test-results
+                name: ci-test-results
                 path: test-results/
                 retention-days: 1
 
