@@ -1,9 +1,13 @@
 name: Update dependency
+# Make sure enable 'Workflow permissions'
+# Go to repo: settings/Actions/general/Workflow permission
+# Enable: ✅ Read and write permissions
+# Enable: ✅ Allow Github actions to create and approve pull request
 
 on:
     workflow_dispatch:
     schedule:
-        - cron: "55 16 17 * *" 
+        - cron: "1 0 1 * *" 
 
 jobs:
     update:
