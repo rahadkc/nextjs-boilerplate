@@ -30,5 +30,6 @@ jobs:
               with:
                 commit-message: "build: update dependencies to the latest version"
                 title: Update dependencies to the latest version
+                token: ${{ secrets.GITHUB_TOKEN }}
 
 
