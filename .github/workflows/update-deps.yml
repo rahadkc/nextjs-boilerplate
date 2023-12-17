@@ -3,7 +3,7 @@ name: Update dependency
 on:
     workflow_dispatch:
     schedule:
-        - cron: "57 22 16 * *" 
+        - cron: "55 9 17 * *" 
 
 jobs:
     update:
@@ -26,7 +26,7 @@ jobs:
             - run: rm -Rf node_modules package-lock.json
             - run: npm install
             - name: Create Pull Request
-              uses: peter-evans/create-pull-request@v4
+              uses: peter-evans/create-pull-request@v5
               with:
                 commit-message: "build: update dependencies to the latest version"
                 title: Update dependencies to the latest version
