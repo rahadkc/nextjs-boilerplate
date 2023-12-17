@@ -3,7 +3,7 @@ name: Update dependency
 on:
     workflow_dispatch:
     schedule:
-        - cron: "21 9 17 * *" 
+        - cron: "44 11 17 * *" 
 
 jobs:
     update:
