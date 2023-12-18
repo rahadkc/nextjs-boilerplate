@@ -1,0 +1,4 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+cd "$(dirname "$0")/.." && exec npx --no -- commitlint --edit $1
+.husky/commit-msg

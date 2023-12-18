@@ -1,0 +1,45 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.4.1/schema.json",
+  "files": {
+    "ignore": ["node_modules", ".next"]
+  },
+  "organizeImports": {
+    "enabled": true
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "all": false,
+      "recommended": true,
+      "style": {
+        "noUnusedTemplateLiteral": "error"
+      },
+      "nursery": {
+        "noDefaultExport": "off",
+        "noUnusedImports": "error",
+        "useAwait": "error",
+        "useValidAriaRole": "warn"
+      },
+      "correctness": {
+        "noUnusedVariables": "error"
+      },
+      "suspicious": {
+        "noConsoleLog": "off"
+      },
+      "performance": {},
+      "security": {},
+      "a11y": {
+        "useHeadingContent": "warn"
+      }
+    }
+  },
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": true,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 100,
+    "lineEnding": "lf",
+    "ignore": []
+  }
+}
