@@ -2,7 +2,11 @@
 
 # dependencies
 /node_modules
+<<<<<<< HEAD
 # /src/stories
+=======
+/src/stories
+>>>>>>> dc2abf47b9f0a8003474cac2c4d0baa8782a0054
 /.pnp
 .pnp.js
 .yarn/install-state.gz
@@ -41,7 +45,11 @@ yarn-error.log*
 next-env.d.ts
 
 # husky
+<<<<<<< HEAD
 # /.husky/
+=======
+/.husky/
+>>>>>>> dc2abf47b9f0a8003474cac2c4d0baa8782a0054
 
 # Storybook
 /storybook-static

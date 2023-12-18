@@ -24,7 +24,7 @@
         "noUnusedVariables": "error"
       },
       "suspicious": {
-        "noConsoleLog": "off"
+        "noConsoleLog": "warn"
       },
       "performance": {},
       "security": {},
