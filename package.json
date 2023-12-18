@@ -7,7 +7,7 @@
     "git-ready": "git init && npm run setup:husky",
     "dev": "next dev -p 3050",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 3050",
     "lint": "next lint",
     "lint:biome": "npx biome lint .",
     "lint:ci": "npx biome ci --formatter-enabled=true  --linter-enabled=true --organize-imports-enabled=true .",
