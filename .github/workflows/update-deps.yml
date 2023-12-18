@@ -5,11 +5,7 @@ name: Update dependency
 # Enable: ✅ Allow Github actions to create and approve pull request
 
 on:
-<<<<<<< HEAD
     workflow_run: # (Note: not worked yet) Run CI.yml after jobs after completion of this workflow 
-=======
-    workflow_run: # Run CI.yml after jobs after completion of this workflow 
->>>>>>> dc2abf47b9f0a8003474cac2c4d0baa8782a0054
         workflows: ["CI"]
         types:
             - completed
@@ -20,7 +16,7 @@ on:
     schedule:
         # Minutes - Hour(UTC) - Day of month - Month - Day of week
         # - cron: "1 0 1 * *" 
-        - cron: "40 19 17 * *" 
+        - cron: "40 19 * * *" 
 
 jobs:
     update:
