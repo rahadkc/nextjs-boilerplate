@@ -58,6 +58,9 @@ jobs:
 
             - name: Cypress run
               uses: cypress-io/github-action@v6
+              with:
+                build: npm run build
+                start: npm start
             
             - name: Run storybook tests
               run: npm run test-storybook:ci
