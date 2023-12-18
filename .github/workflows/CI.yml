@@ -61,6 +61,9 @@ jobs:
               with:
                 build: npm run build
                 start: npm start
+
+            - name: Install Playwright (Need Playwrite to run storybook test)
+              run: npx playwright install --with-deps
             
             - name: Run storybook tests
               run: npm run test-storybook:ci
