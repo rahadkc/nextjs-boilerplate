@@ -33,11 +33,12 @@
     "build-storybook": "storybook build",
     "serve-storybook": "run-s storybook:*",
     "test-storybook:ci": "start-server-and-test serve-storybook http://127.0.0.1:6006 test-storybook",
-    "postbuild": "next-sitemap",
     "lint-staged": "lint-staged --config lint-staged.config.js",
     "setup:husky": "npm pkg set scripts.prepare=\"husky install\" && npm run prepare && npx husky add .husky/pre-commit \"npm run lint-staged\" && npx husky add .husky/pre-commit \"npm run test\" && npx husky add .husky/pre-commit \"npm run e2e:headless\" && echo '#!/bin/sh\n. \"$(dirname \"$0\")/_/husky.sh\"\ncd \"$(dirname \"$0\")/..\" && exec npx --no -- commitlint --edit $1' > .husky/commit-msg && chmod +x .husky/commit-msg && npx husky add .husky/commit-msg \".husky/commit-msg\" && git add .husky/pre-commit .husky/commit-msg",
+    "setup:husky-comitlint": "bash husky-config.sh",
     "prepare": "husky install",
-    "clean": "rimraf .next .swc out coverage"
+    "clean": "rimraf .next .swc out coverage",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.3.2",
