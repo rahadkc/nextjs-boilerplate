@@ -3,8 +3,9 @@ import { configureStore } from "@reduxjs/toolkit";
 import logger from "redux-logger";
 import { persistReducer, persistStore } from "redux-persist";
 
-import reducers from "@/redux/reducers";
 import storage from "./customeStorage";
+// import reducers from "@/redux/reducers";
+import reducers from "./reducers";
 
 const persistConfig = {
   key: "root",
