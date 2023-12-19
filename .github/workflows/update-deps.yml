@@ -16,7 +16,7 @@ on:
     schedule:
         # Minutes - Hour(UTC) - Day of month - Month - Day of week
         # - cron: "1 0 1 * *" 
-        - cron: "0/15 * * * *" 
+        - cron: "0/8 * * * *" 
 
 jobs:
     update:
