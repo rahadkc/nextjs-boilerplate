@@ -21,7 +21,7 @@
     "analyze": "ANALYZE=true next build",
     "analyze:server": "BUNDLE_ANALYZE=server next build",
     "analyze:browser": "BUNDLE_ANALYZE=browser next build",
-    "check-types": "tsc --noEmit --pretty --nolibcheck",
+    "check-types": "tsc --noEmit --pretty --skipLibCheck",
     "cypress:open": "cypress open",
     "e2e": "start-server-and-test dev http://localhost:3050 \"cypress open --e2e\"",
     "e2e:headless": "start-server-and-test dev http://localhost:3050 \"cypress run --e2e\"",
