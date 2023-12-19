@@ -43,7 +43,7 @@ jobs:
               with:
                 commit-message: "build: update dependencies to the latest version"
                 title: Update dependencies to the latest version
-                token: ${{ secrets.ACTION_WORKFLOW }}
+                token: ${{ secrets.ACTION_WORKFLOW }} # GITHUB_TOKEN ahve limited access. To trigger one workflow from another need a PAT(Personal access token)
 
 
 

@@ -1,11 +1,9 @@
 import type { Action, ThunkAction } from "@reduxjs/toolkit";
 import { configureStore } from "@reduxjs/toolkit";
-// import storage from 'redux-persist/lib/storage'
 import logger from "redux-logger";
 import { persistReducer, persistStore } from "redux-persist";
 
 import reducers from "@/redux/reducers";
-
 import storage from "./customeStorage";
 
 const persistConfig = {
@@ -20,8 +18,8 @@ export const store = configureStore({
   devTools: process.env.NODE_ENV !== "production",
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
-      serializableCheck: false,
-    }).concat(logger),
+      serializableCheck: false, // Disable serializable state check for redux-persist
+    }).concat(logger), // Add the logger middleware here
 });
 
 export const persistor = persistStore(store);
