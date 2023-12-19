@@ -5,6 +5,11 @@ on:
         branches: [main]
     pull_request:
         branches: [main]
+    pull_request_target:
+        types:
+          - opened
+        branches:
+          - 'main'
 jobs:
     build:
         strategy:
